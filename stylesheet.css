@@ -1,0 +1,691 @@
+/* ---------------------------- Start: Global styles ---------------------------- */
+* {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: auto; 
+  list-style: none; 
+}
+
+:root {
+  --primary-color: #2079A6; /* Primary color */
+  --secondary-color: #fafafae6; /* Secondary color */
+  --white-color: #ffff; /* White color */
+  --offWhite-color: #dee3e4; /* Off-white color */
+  --dark-color: #212529; /* Dark color */
+  --grey-color: #6c757d; /* grey color */
+}
+
+/* Text color utilities */
+.text-primary {
+  color: var(--primary-color) !important;
+}
+
+.text-secondary {
+  color: var(--secondary-color) !important;
+}
+
+.text-white {
+  color: var(--white-color) !important; /* Text color for text-white */
+}
+
+.text-offWhite {
+  color: var(--offWhite-color) !important; /* Text color for text-offWhite */
+}
+
+.text-dark {
+  color: var(--dark-color) !important; /* Text color for text-dark */
+}
+
+/* Custom text styles */
+.text-1 {
+  color: var(--white-color) !important; /* Text color for text-1 */
+  font-size: 1.4em; /* Font size for text-1 */
+  font-weight: 600; /* Font weight for text-1 */
+}
+
+.text-2 {
+  color: var(--white-color) !important; /* Text color for text-2 */
+  font-size: 2.2em; /* Font size for text-2 */
+  font-weight: 600; /* Font weight for text-2 */
+}
+
+.text-3 {
+  color: var(--offWhite-color) !important; /* Text color for text-3 */
+  font-size: 1.1em; /* Font size for text-3 */
+  font-weight: 300; /* Font weight for text-3 */
+}
+
+.text-4 {
+  color: var(--dark-color) !important; /* Text color for text-4 */
+  font-size: 1.75rem !important; /* Font size for text-4 */
+  font-weight: 600 !important; /* Font weight for text-4 */
+}
+
+.text-5 {
+  color: #4c4d4d !important; /* Text color for text-5 */
+  font-size: 1em; /* Font size for text-5 */
+  font-weight: 400; /* Font weight for text-5 */
+}
+
+.text-6 {
+  color: var(--dark-color);
+  font-size: 24px !important;
+  font-size: 1.5rem !important;
+}
+
+.text-7 {
+  color: var(--dark-color);
+  font-size: 24px !important;
+  font-size: 1.2rem !important;
+}
+
+.text-8 {
+  color: var(--white-color) !important; /* Text color for text-2 */
+  font-size: 0.875rem !important; /* Font size for text-2 */
+}
+
+.text-9 {
+  color: var(--dark-color);
+  font-size: 1em !important;
+  font-weight: 500 !important;
+}
+
+.section {
+  padding: 3em 0em;
+}
+
+.section:first-of-type {
+  padding-top: 10em;
+}
+.section:nth-of-type(even) {
+  background-color: #f8f9fa;
+}
+
+.section:nth-of-type(odd) {
+  background-color: none;
+}
+/* ---------------------------- End: Global styles ---------------------------- */
+
+/* ---------------------------- Start: Header Section ---------------------------- */
+header {
+  background-image: linear-gradient(rgba(17, 19, 23, 0.8), rgba(17, 19, 23, 0.8)), url("ft\ persoanl\ web.png");
+  background-size: cover; /* Make the background cover the entire area */
+  background-position: top center; /* Center the background image */
+  background-attachment: fixed; /* Fix the background image during scroll */
+  background-repeat: no-repeat; /* Do not repeat the image */  
+}
+/* ----------------------------- End: Header Section ----------------------------- */
+
+/* ---------------------------- Start: Navbar Section ---------------------------- */
+.navbar-dark .navbar-nav .nav-link {
+  color: var(--secondary-color); /* Text color for navigation links */
+  font-size: 1em; /* Font size for navigation links */
+  font-weight: 500; /* Font weight for navigation links */
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+  color: var(--primary-color); /* Active link color */
+}
+.navbar-toggler {
+  box-shadow: none;
+}
+.navbar-toggler-btn:focus,
+.navbar-toggler-btn:hover {
+  box-shadow: none; /* Remove box-shadow on focus or hover */
+  border-color: var(--primary-color); /* Border color on focus or hover */
+}
+
+.logo {
+  width: 100px; /* Ukuran logo */
+  height: 100px;
+  border-radius: 50%; /* Membuat gambar menjadi lingkaran */
+  object-fit: cover; /* Untuk memastikan gambar tetap proporsional */
+  transition: transform 0.3s ease; /* Animasi zoom saat hover */
+}
+
+.logo:hover {
+  transform: scale(1.1);
+  color: var(--primary-color); /* Zoom 10% saat di hover */
+}
+
+/* ---------------------------- Start: Social Icons Section ---------------------------- */
+.sm-icons .nav-link {
+  color: var(--secondary-color); /* Text color for social media icons */
+  font-size: 1.5em; /* Font size  for social media icons */
+  padding: 13.6px 0; /* Vertical padding for social media icons */
+  padding-right: 1.2em; /* Right padding for social media icons */
+}
+
+.sm-icons {
+  display: flex; /* Display social media icons in a flex container */
+  flex-direction: row; /* Arrange social media icons in a row */
+  /* padding-bottom: 1em; */ /* Optional bottom padding */
+}
+
+@media (width < 992px) {
+  .sm-icon-wide-screen {
+    display: none;
+  }
+}
+
+.bi-twitter:hover {
+  color: #00acee; /* Color on hover for Twitter icon */
+}
+
+.bi-facebook:hover {
+  color: #3b5998; /* Color on hover for Facebook icon */
+}
+
+.bi-dribbble:hover {
+  color: #ea4c89; /* Color on hover for Dribbble icon */
+}
+/* ----------------------------- End: Social Icons Section ----------------------------- */
+
+/* ---------------------------- Start: Navigation Item Section ---------------------------- */
+.nav-item {
+  border-bottom: 1px solid #64626236; /* Bottom border for navigation items */
+  margin-right: 25px; /* Right margin for navigation items */
+}
+
+.nav-item a:hover,
+.nav-item a:focus {
+  color: var(--primary-color) !important; /* Color on hover or focus for navigation items */
+}
+
+.navbar-collapse {
+  padding-left: 25px; /* Left padding for navbar collapse */
+  /* background-color: rgba(0, 0, 0, 0.0); */ /* Optional background color */
+}
+/* ----------------------------- End: Navigation Item Section ----------------------------- */
+/* ----------------------------- End: Navbar Section ----------------------------- */
+
+/* ---------------------------- Start: Home Section ---------------------------- */
+.shadow-none {
+  box-shadow: none !important; /* Remove box-shadow */
+}
+
+.hire-btn {
+  color: var(--primary-color); /* Text color for hire button */
+  border: 2px solid var(--primary-color); /* Border color for hire button */
+  letter-spacing: 1px; /* Letter spacing for hire button */
+  font-weight: 500; /* Font weight for hire button */
+  font-size: 0.8em; /* Font size for hire button */
+  padding: 10px 30px; /* Padding for hire button */
+  word-spacing: 1px; /* Word spacing for hire button */
+  margin: 30px 0px; /* Margin for hire button */
+}
+
+.hire-btn:hover,
+.hire-btn:focus {
+  background-color: var(--primary-color); /* Background color on hover or focus */
+  border: 2px solid var(--primary-color); /* Border color on hover or focus */
+  color: var(--secondary-color); /* Text color on hover or focus */
+}
+
+.typed-output-container {
+  display: inline-block; /* Ensure the text and cursor are inline */
+}
+
+.typed-output {
+  display: inline; /* Make sure the cursor is inline with the text */
+  color: var(--white-color) !important; /* Text color for typed output */
+  font-size: 2.2em; /* Font size for typed output */
+  font-weight: 600; /* Font weight for typed output */
+}
+
+.typed-cursor {
+  display: inline; /* Make sure the cursor is inline with the text */
+  color: var(--white-color) !important; /* Text color for typed cursor */
+  font-size: 2.2em; /* Font size for typed cursor */
+  font-weight: 600; /* Font weight for typed cursor */
+  opacity: 1; /* Opacity for typed cursor */
+  animation: blink 0.7s infinite; /* Blink animation for typed cursor */
+}
+/* ----------------------------- End: Home Section ----------------------------- */
+
+/* ----------------------------- Start: About Section ----------------------------- */
+.section-title {
+  padding: 20px 0; /* Padding for section title */
+}
+
+.section-title h1 {
+  font-size: 5rem !important; /* Font size for section title heading */
+  font-weight: 600; /* Font weight for section title heading */
+  color: var(--offWhite-color) !important; /* Text color for section title heading */
+  text-transform: uppercase; /* Transform text to uppercase */
+}
+
+.section-title p {
+  font-size: 2rem !important; /* Font size for section title paragraph */
+  font-weight: 600 !important; /* Font weight for section title paragraph */
+  color: var(--dark-color) !important; /* Text color for section title paragraph */
+  position: relative; /* Positioning for pseudo-element */
+  padding-bottom: 2px; /* Bottom padding for section title paragraph */
+}
+
+.section-title p::after {
+  content: ""; /* Empty content for pseudo-element */
+  position: absolute; /* Positioning pseudo-element absolutely */
+  height: 2px; /* Height of pseudo-element */
+  width: 30%; /* Width of pseudo-element */
+  bottom: 0; /* Align to bottom of parent */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Centering transform */
+  background-color: var(--primary-color); /* Background color for pseudo-element */
+}
+
+.section-sub-title h2 {
+  font-size: 28px; /* Font size for section subtitle heading */
+  font-weight: 600; /* Font weight for section subtitle heading */
+}
+
+.section-sub-title p {
+  margin: 0 0 16px; /* Margin for section subtitle paragraph */
+}
+
+.section-data ul {
+  list-style-type: none; /* Remove default list item markers (bullets/numbers) */
+  padding-top: 12px; /* Add padding at the top of the list */
+  padding-bottom: 12px; /* Add padding at the bottom of the list */
+}
+
+.section-data ul li {
+  padding: 10px 0px; /* Add vertical padding to each list item */
+  border-bottom: 1px solid var(--offWhite-color); /* Add a bottom border to each list entry */
+}
+
+.section-data ul li a {
+  text-decoration: none; /* Remove default underline from links */
+  color: var(--primary-color); /* Set the link text color to the primary color */
+  padding: 12px 0px; /* Add vertical padding to each link */
+}
+
+.data-value {
+  font-weight: 600; /* Set the font weight to 600 for a bolder appearance */
+  margin: 0px 8px 0px 0px; /* Add right margin of 8px to the data-value element */
+}
+
+.dw-cv-btn {
+  background-color: var(--primary-color);
+  color: var(--secondary-color); /* Text color for dw-cv button */
+  border: 2px solid var(--secondary-color); /* Border color for dw-cv button */
+  letter-spacing: 1px; /* Letter spacing for dw-cv button */
+  font-weight: 500; /* Font weight for dw-cv button */
+  font-size: 1em; /* Font size for dw-cv button */
+  padding: 12.8px 41.6px; /* Padding for dw-cv button */
+  word-spacing: 1px; /* Word spacing for dw-cv button */
+  margin: 30px 0px; /* Margin for dw-cv button */
+}
+
+.dw-cv-btn:hover,
+.dw-cv-btn:focus {
+  background-color: #1aae83; /* Background color on hover or focus */
+  border: 2px solid #1aae83; /* Border color on hover or focus */
+  color: var(--secondary-color); /* Text color on hover or focus */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.section-kpi {
+  padding-top: 20px; /* Top padding for the section */
+  padding-bottom: 20px; /* Bottom padding for the section */
+  position: relative; /* Position set to relative for positioning child elements */
+}
+
+.featured-box {
+  box-sizing: border-box;
+  position: relative;
+  border-right: 2px solid var(--offWhite-color); /* Right border with off-white color */
+  color: var(--offWhite-color); /* Text color set to off-white */
+}
+
+.featured-box h4 {
+  color: var(--grey-color); /* Text color set to grey */
+  font-size: 40px; /* Font size set to 40px */
+  font-weight: 500; /* Font weight set to 500 */
+}
+
+.featured-box p {
+  color: var(--dark-color); /* Text color set to dark */
+  font-size: 20px; /* Font size set to 20px */
+  font-weight: 400; /* Font weight set to 400 */
+}
+
+/* Remove the border-right for the last '.col-6' element within a '.row' inside a '.container' */
+.container .row > .col-6:nth-last-child(1) .featured-box {
+  border: none; /* Remove border for the last column */
+}
+
+/* ----------------------------- End: About Section ----------------------------- */
+/* ----------------------------- Start: Services Section ----------------------------- */
+
+/* Styling for service items */
+.srv-item {
+  display: flex; /* Use flexbox for layout */
+  align-items: flex-start; /* Align items to the start of the flex container */
+  text-align: left; /* Align text to the left */
+  transition: all 0.3s ease-in-out; /* Smooth transition for all properties over 0.3s */
+  padding: 1rem; /* Padding around each service item */
+  border-radius: 8px; /* Rounded corners */
+}
+
+/* Icon styling */
+.srv-icon {
+  font-size: 30px; /* Icon font size */
+  padding: 15px 20px; /* Padding around the icon */
+  color: #4c4d4d; /* Icon color */
+  border-radius: 8px; /* Rounded corners */
+  min-width: 55px; /* Minimum width */
+  min-height: 55px; /* Minimum height */
+  display: flex; /* Use flexbox */
+  align-items: center; /* Align items to the center */
+  justify-content: center; /* Justify content to the center */
+}
+
+/* Content container */
+.srv-content {
+  margin-left: 15px; /* Left margin for content */
+}
+
+/* Title styling */
+.srv-content h3 {
+  margin: 0; /* Remove margin */
+  font-size: 1.5rem; /* Title font size */
+}
+
+/* Text styling */
+.srv-content p {
+  margin: 0; /* Remove margin */
+  color: #4c4d4d; /* Text color */
+  font-size: 1rem; /* Text font size */
+}
+
+/* ----------------------------- End: Services Section ----------------------------- */
+
+/* ----------------------------- Start: Resume Section ----------------------------- */
+
+/* Container for the entire abilities section */
+.abilities-section {
+  text-align: center;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Title styling */
+.abilities-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Individual ability item styling */
+.ability-item {
+  display: inline-block;
+  width: 150px;
+  margin: 10px;
+  vertical-align: top;
+  text-align: center;
+}
+
+/* Ability image styling */
+.ability-image {
+  width: 100px;
+  height: auto;
+  border-radius: 10px; /* Optional: rounded corners */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for images */
+.ability-image:hover {
+  transform: scale(1.1);
+}
+
+/* Ability description text styling */
+.ability-description {
+  font-weight: bold;
+  color: #333;
+  margin-top: 8px;
+  font-size: 1rem;
+}
+
+
+
+/* Badge styling */
+.badge {
+  font-size: 1.25em; /* Badge font size */
+  background-color: var(--primary-color) !important; /* Background color for badge */
+}
+
+/* Progress bar styling */
+.progress-bar {
+  background-color: var(--primary-color) !important; /* Background color for progress bar */
+}
+
+/* Button styling for DW-CV */
+.dw-cv-skill-btn {
+  background-color: var(--secondary-color); /* Background color for DW-CV button */
+  color: var(--grey-color); /* Text color for DW-CV button */
+  border: 2px solid var(--grey-color); /* Border color for DW-CV button */
+  font-weight: 500; /* Font weight for DW-CV button */
+  font-size: 1em; /* Font size for DW-CV button */
+  padding: 12.8px 41.6px; /* Padding for DW-CV button */
+  word-spacing: 1px; /* Word spacing for DW-CV button */
+  margin: 30px 0px; /* Margin for DW-CV button */
+}
+
+/* Button hover/focus state styling */
+.dw-cv-skill-btn:hover,
+.dw-cv-skill-btn:focus {
+  background-color: var(--grey-color); /* Background color on hover or focus */
+  border: 2px solid var(--grey-color); /* Border color on hover or focus */
+  color: var(--secondary-color); /* Text color on hover or focus */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Box shadow on hover or focus */
+}
+/* ----------------------------- End: Resume Section ----------------------------- */
+/* ----------------------------- Start: Portfolio Section ----------------------------- */
+/* Posisi dan pengaturan awal untuk img-text */
+.img-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0px 1px 5px black;
+}
+
+.img-text {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(100%); /* Mulai dari bawah */
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)); /* Gradasi dari hitam ke transparan */
+  transition: all 0.5s ease; /* Transisi halus */
+}
+
+/* Efek hover: teks muncul dari bawah dengan gradasi */
+.img-card:hover .img-text {
+  opacity: 1; /* Menampilkan teks */
+  transform: translateY(0); /* Bergerak ke atas */
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)); /* Gradasi tetap */
+}
+
+.img-text span {
+  color: white;
+  transition: color 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+.img-text h5 {
+  color: white;
+  text-shadow: 2px 2px black;
+  transition: color 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.img-card:hover .img-text h5,
+.img-card:hover .img-text span {
+  transform: translateY(-10px);
+  text-shadow: 2px 2px black;
+}
+
+.img-card:not(:hover) .img-text h5,
+.img-card:not(:hover) .img-text span {
+  transform: translateY(0);
+}
+
+/* Styling untuk tombol Learn More */
+.learn-more-btn {
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background-color: var(--primary-color); /* Biru standar Bootstrap */
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(20px); /* Mulai dari bawah */
+  transition: all 0.5s ease;
+}
+
+/* Efek saat hover pada tombol */
+.learn-more-btn:hover {
+  background-color: #09aedc; /* Warna biru lebih gelap */
+  transform: translateY(0); /* Bergerak ke atas */
+}
+
+/* Tombol muncul saat hover pada img-card */
+.img-card:hover .learn-more-btn {
+  opacity: 1;
+  transform: translateY(0); /* Bergerak ke atas */
+}
+
+/* Responsif - Menyesuaikan tampilan untuk perangkat mobile */
+@media (max-width: 767px) {
+  /* Menampilkan satu kolom di layar kecil */
+  .img-col {
+    flex: 1 1 100%; /* Mengatur lebar kolom menjadi 100% pada mobile */
+    padding: 20px; /* Menghilangkan padding */
+  }
+
+  /* Gambar dan teks di atas untuk tampilan mobile */
+  .img-card img {
+    width: 100%; /* Memastikan gambar mengisi lebar kolom */
+    height: auto; /* Memastikan proporsi gambar tetap */
+  }
+
+  .img-text {
+    padding: 10px; /* Memberikan sedikit ruang pada teks */
+    transform: translateY(100%); /* Mulai dari bawah */
+  }
+
+  /* Ukuran teks pada mobile */
+  .img-text h5 {
+    font-size: 18px;
+  }
+
+  .img-text span {
+    font-size: 14px;
+  }
+
+  /* Tombol "Learn More" lebih besar dan mudah diakses */
+  .learn-more-btn {
+    font-size: 14px;
+    padding: 12px 24px;
+    margin-top: 15px;
+  }
+}
+
+/* Responsif - Menyesuaikan tampilan untuk tablet (screen width 768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .img-col {
+    flex: 1 1 50%; /* Dua kolom pada tablet */
+    padding: 30px; /* Menambahkan padding */
+  }
+
+  .img-text h5 {
+    font-size: 20px;
+  }
+
+  .img-text span {
+    font-size: 16px;
+  }
+
+  .learn-more-btn {
+    font-size: 16px;
+    padding: 12px 25px;
+  }
+}
+
+/* ----------------------------- End: Portfolio Section ----------------------------- */
+/* ----------------------------- Start: Contact Section ----------------------------- */
+
+.address-contacts i {
+  color: var(--primary-color);
+}
+
+.fa-dribbble:hover {
+  color: #ea4c89; /* Color on hover for Dribbble icon */
+}
+  
+.fa-twitter:hover {
+  color: #00acee; /* Color on hover for Twitter icon */
+}
+
+.fa-facebook-f:hover {
+  color: #3b5998; /* Color on hover for Facebook icon */
+}
+
+.fa-google:hover {
+  color: #c20806; /* Color on hover for Google icon */
+}
+
+.fa-github:hover {
+  color: #040204; /* Color on hover for Github icon */
+}
+
+.form-submit-btn {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: none;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: 1em;
+  padding: 12.8px 41.6px;
+  word-spacing: 1px;
+  margin: 30px 0px;
+  transition: 350ms ease-in-out;
+}
+
+.form-submit-btn:hover,
+.form-submit-btn:focus {
+  transform: scale(0.99);
+  background-color: var(--primary-color); /* Background color on hover or focus */
+  color: var(--secondary-color); /* Text color on hover or focus */
+  box-shadow: 0px 2px 1px var(--primary-color);
+}
+/* ----------------------------- End: Contact Section ----------------------------- */
+/* ----------------------------- Start: Footer Section ----------------------------- */
+.footer-link {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: #1aae83 !important;
+}
+
+.nav-item-footer {
+  border-style: none;
+}
+
+.nav-footer-link {
+  text-decoration: none !important;
+  color: var(--dark-color) !important;
+}
+/* ----------------------------- End: Footer Section ----------------------------- */
